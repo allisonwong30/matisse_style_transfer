@@ -24,19 +24,26 @@
     height: 500px;
     display: inline-block;
   }
+  body {
+    background-color: #f3d1fc;
+  }
+  button{
+    background-color: red;
+  }
+
   </style>
 </head>
 
 
 <body>
-  <h1>Matisse Style Transfer using p5.js!</h1>
+  <h1 style="font-family:arial black;">Matisse Style Transfer using p5.js!</h1>
   <p id="statusMsg">Loading Models...</p>
-  <button id="transferBtn">Click here!</button>
-  <p>Input Image:</p>
+  <button id="transferBtn" style="font-family:arial black;">Click here!</button>
+  <p style="font-family:arial black;">Input Image:</p>
   <img src="img/438015.jpg" alt="input img" id="inputImg">
 
   <div id="style">
-    <p>Style: Laurette in a Green Robe, Black Background, 1916 - Henri Matisse</p>
+    <p style="font-family:arial black;" >Style: Laurette in a Green Robe, Black Background, 1916 - Henri Matisse</p>
     <img src="img/matisse.jpg" alt="style one">
   </div>
 

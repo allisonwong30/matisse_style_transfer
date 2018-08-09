@@ -25,11 +25,29 @@
     display: inline-block;
   }
   body {
-    background-color: #f3d1fc;
+    background-color: #defafc;
   }
   button{
-    background-color: red;
+    background-color: #b7f7d5;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 24px;
+    color: #33509b;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 3px solid #0e2560;
+    transition-duration: 0.5s;
   }
+
+  button:hover{
+    background-color: #0e2560;
+    color: #fbefff;
+    box-shadow: 0 12px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  h1 {
+    text-decoration: underline;}
+
 
   </style>
 </head>
@@ -37,14 +55,16 @@
 
 <body>
   <h1 style="font-family:arial black;">Matisse Style Transfer using p5.js!</h1>
-  <p id="statusMsg">Loading Models...</p>
+  <p id="statusMsg" style="font-family:arial">Loading Models...</p>
   <button id="transferBtn" style="font-family:arial black;">Click here!</button>
   <p style="font-family:arial black;">Input Image:</p>
   <img src="img/438015.jpg" alt="input img" id="inputImg">
 
+
   <div id="style">
     <p style="font-family:arial black;" >Style: Laurette in a Green Robe, Black Background, 1916 - Henri Matisse</p>
     <img src="img/matisse.jpg" alt="style one">
+  <p style="font-family:arial black;">Result Image:</p>
   </div>
 
 

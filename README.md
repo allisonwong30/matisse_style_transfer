@@ -1,5 +1,7 @@
 # Matisse Style Transfer
 
+Access the style transfer on my [GitHub Page](https://allisonwong30.github.io/matisse_style_transfer/)!
+
 This repository contains a style transfer that takes Matisse's art style and applies it to other paintings.  The artwork used as the model is Laurette in a Green Robe, Black Background by Henri Matisse. 
 
 ![alt text](https://github.com/allisonwong30/matisse_style_transfer/blob/master/img/matisse.jpg "Laurette in a Green Robe, Black Background (1916)")

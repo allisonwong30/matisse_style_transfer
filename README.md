@@ -1,4 +1,4 @@
-# Matisse Style Transfer
+# Matisse Style Transfer Using p5.js
 
 Access the style transfer on my [GitHub Page](https://allisonwong30.github.io/matisse_style_transfer/)!
 

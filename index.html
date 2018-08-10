@@ -58,6 +58,10 @@
   <p id="statusMsg" style="font-family:arial">Loading Models...</p>
   <button id="transferBtn" style="font-family:arial black;">Click here!</button>
   <p style="font-family:arial black;">Input Image:</p>
+  <input type="file" id="inputFile" size= "10" />
+  <br> 
+  <br>
+
   <img src="img/438015.jpg" alt="input img" id="inputImg">
 
 
@@ -69,7 +73,47 @@
 
 
   <script src="sketch.js"></script>
-  
+<script>
+
+    $(function () {
+
+       $("#inputFile").change(function () {
+
+            readURL(this);
+
+        });
+
+    });
+
+ 
+
+ 
+
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+ 
+
+            reader.onload = function (e) {
+
+               //alert(e.target.result);
+
+                $('#inputImg').attr('src', e.target.result);
+
+            }
+
+ 
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+
+</script>  
 </body>
 
 </html>
